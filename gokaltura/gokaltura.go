@@ -21,6 +21,9 @@ func NewGoKaltura(configuration *configuration.Configuration) IGoKaltura {
 	}
 	k.restClient = resty.New()
 	k.restClient.SetBaseURL(configuration.BaseUrl)
+	if configuration.IsDebug {
+		k.restClient.SetDebug(true)
+	}
 	//
 	return k
 }
