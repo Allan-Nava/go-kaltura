@@ -8,6 +8,8 @@ import (
 type Configuration struct {
 	IsDebug    bool `env:"IS_DEBUG"`
 	BaseUrl    string `env:"BASE_URL"`
+	ApiVersion string `env:"ApiVersion"`
+	ClientTag 	string 
 }
 
 
@@ -17,6 +19,7 @@ func GetConfiguration() *Configuration {
 	if err != nil {
 		panic("failed to read configuration")
 	}
+	configuration.ClientTag = "v0.1.0"
 	//
 	return &configuration
 }
