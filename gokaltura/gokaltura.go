@@ -20,7 +20,7 @@ func NewGoKaltura(configuration *configuration.Configuration) IGoKaltura {
 		configuration: configuration,
 	}
 	k.restClient = resty.New()
-	k.restClient.SetBaseURL(configuration.BASE_URL)
+	k.restClient.SetBaseURL(configuration.BaseUrl)
 	//
 	return k
 }
