@@ -12,6 +12,7 @@ type IGoKaltura interface {
 type gokaltura struct {
 	configuration *configuration.Configuration
 	restClient    *resty.Client
+	kalturaSession string 
 }
 
 
