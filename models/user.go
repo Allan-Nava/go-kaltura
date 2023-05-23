@@ -1,59 +1,38 @@
 package models
 
-/*
-{
-  "adminTags": "",
-  "allowedPartnerIds": "",
-  "allowedPartnerPackages": "",
-  "city": "",
-  "country": "",
-  "createdAt": 0,
-  "deletedAt": 0,
-  "description": "",
-  "email": "",
-  "fullName": "",
-  "id": "",
-  "indexedPartnerDataInt": 0,
-  "indexedPartnerDataString": "",
-  "language": "aa",
-  "lastLoginTime": 0,
-  "objectType": "KalturaUser",
-  "partnerData": "",
-  "partnerId": 0,
-  "screenName": "",
-  "state": "",
-  "status": 0,
-  "statusUpdatedAt": 0,
-  "storageSize": 0,
-  "tags": "",
-  "thumbnailUrl": "",
-  "updatedAt": 0,
-  "userMode": 0,
-  "zip": "",
-  "attendanceInfo": "",
-  "company": "",
-  "dateOfBirth": 0,
-  "encryptedSeed": "",
-  "externalId": "",
-  "firstName": "",
-  "gender": 0,
-  "isAccountOwner": true,
-  "isAdmin": true,
-  "isGuest": true,
-  "isSsoExcluded": true,
-  "ksPrivileges": "",
-  "lastName": "",
-  "loginEnabled": true,
-  "password": "",
-  "registrationInfo": "",
-  "roleIds": "",
-  "roleNames": "",
-  "title": "",
-  "type": 0
-}
-*/
 type KalturaUser struct {
-	AdminTags string  `json:"adminTags"`
-	AllowedPartnerIds string  `json:"allowedPartnerIds"`
-	Email string  `json:"email"`
+	AdminTags                string `json:"adminTags"`
+	AllowedPartnerIds        string `json:"allowedPartnerIds"`
+	AllowedPartnerPackages   string `json:"allowedPartnerPackages"`
+	City                     string `json:"city"`
+	Country                  string `json:"country"`
+	CreatedAt                int    `json:"createdAt"`
+	DeletedAt                int    `json:"deletedAt"`
+	Description              string `json:"description"`
+	Email                    string `json:"email"`
+	FullName                 string `json:"fullName"`
+	Id                       string `json:"id"`
+	IndexedPartnerDataInt    int    `json:"indexedPartnerDataInt"`
+	IndexedPartnerDataString string `json:"indexedPartnerDataString"`
+	Language                 string `json:"language"`
+	LastLoginTime            int    `json:"lastLoginTime"`
+	ObjectType               string `json:"objectType"`
+	PartnerData              string `json:"partnerData"`
+	PartnerId                int    `json:"partnerId"`
+	ScreenName               string `json:"screenName"`
+	State                    string `json:"state"`
+	Status                   int    `json:"status"`
+	StatusUpdatedAt          int    `json:"statusUpdatedAt"`
+	StorageSize              int    `json:"storageSize"`
+	Tags                     string `json:"tags"`
+	ThumbnailUrl             string `json:"thumbnailUrl"`
+	UpdatedAt                int    `json:"updatedAt"`
+	UserMode                 int    `json:"userMode"`
+	Zip                      string `json:"zip"`
+	AttendanceInfo           string `json:"attendanceInfo"`
+	Company                  string `json:"company"`
+	DateOfBirth              int    `json:"dateOfBirth"`
+	EncryptedSeed            string `json:"encryptedSeed"`
+	ExternalId               string `json:"externalId"`
+	FirstName                string `json:"firstName"`
 }
