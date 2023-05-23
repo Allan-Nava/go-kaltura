@@ -21,10 +21,12 @@ func (o *gokaltura) GetSession(session string) error{
 }
 
 /*
-curl -X POST https://www.kaltura.com/api_v3/service/session/action/end \
-    -d "ks=$KALTURA_SESSION" \
+	curl -X POST https://www.kaltura.com/api_v3/service/session/action/end \
+	    -d "ks=$KALTURA_SESSION" \
 */
-
+func (o *gokaltura) EndSession(session string) error {
+	return nil
+}
 
 /*
 curl -X POST https://www.kaltura.com/api_v3/service/session/action/get \
