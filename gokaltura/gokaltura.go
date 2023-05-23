@@ -8,6 +8,7 @@ import (
 type IGoKaltura interface {
 	//
 	StartSession(userId string) error
+	GetSession(session string) error
 	//
 }
 

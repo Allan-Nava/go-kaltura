@@ -14,6 +14,13 @@ func (o *gokaltura) StartSession(userId string) error {
 
 
 /*
+https://www.kaltura.com/api_v3/service/session/action/get
+*/
+func (o *gokaltura) GetSession(session string) error{
+	return nil
+}
+
+/*
 curl -X POST https://www.kaltura.com/api_v3/service/session/action/end \
     -d "ks=$KALTURA_SESSION" \
 */
