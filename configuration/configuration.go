@@ -7,6 +7,8 @@ import (
 
 type Configuration struct {
 	IsDebug    bool `env:"IS_DEBUG"`
+	AdminSecret string `env:"ADMIN_SECRET"`
+	UniqueUserId string `env:"UNIQUE_USER_ID"`
 	BaseUrl    string `env:"BASE_URL"`
 	ApiVersion string `env:"ApiVersion"`
 	ClientTag 	string 
