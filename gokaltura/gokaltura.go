@@ -7,6 +7,8 @@ import (
 
 type IGoKaltura interface {
 	//
+	StartSession(userId string) error
+	//
 }
 
 type gokaltura struct {
