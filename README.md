@@ -4,7 +4,7 @@
  `go-kaltura` is a Go client library for interacting with the Kaltura Video Platform API. It provides a simple and convenient way to integrate Kaltura functionality into your Go applications.
 
 
-## Installation
+## Installation
 To use go-kaltura, you need to have Go installed and set up on your machine. You can then install the library by running the following command:
 
 ```bash
